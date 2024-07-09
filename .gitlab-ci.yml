@@ -1,0 +1,7 @@
+run_tests:
+  image: python:3.12.4-bookworm
+  before_script:
+   - apt-get update && apt-get install make
+  script:
+    -make test
+    
